@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+
+    <!-- !custom css  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- !font awesome css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa-sharp fa-solid fa-plane-departure"></i>Ethiopia Tourism</a
+      >
+      <div class="menu-btn">
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="destination.html">Destination</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="title">
+      <h1>PHOTO<span>Gallery</span></h1>
+    </div>
+
+    <div class="full-img" id="fullImgBox">
+      <img src="images/1.JPG" id="fullImg" alt = ""/>
+      <span onclick="closeFullImg()">X </span>
+    </div>
+
+    <!-- image gallery starts here -->
+    <div class="img-gallery">
+      <img src="images/1.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/2.JPG" onclick="openFullImg(this.src)" alt = "" />
+      <img src="images/3.JPG" onclick="openFullImg(this.src)" alt = "" />
+      <img src="images/4.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/5.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/6.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/7.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/8.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/9.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/10.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/11.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/12.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/13.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/14.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/15.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/16.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/17.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/18.webp" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/19.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/20.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/21.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/22.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/23.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/24.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/25.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/26.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/27.webp" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/28.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/29.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/30.jpg" onclick="openFullImg(this.src)" alt = ""/>
+    </div>
+
+    <div class="title">
+      <h1>Food<span>Gallery</span></h1>
+    </div>
+    <div class="full-img" id="fullImgBox1">
+      <img src="images/1.JPG" id="fullImg1" alt = ""/>
+      <span onclick="closeFullImg()">X </span>
+    </div>
+    <!-- when you click the image, it shows the full image -->
+    <div class="img-gallery">
+      <img src="images/food1.jpg" onclick="openFullImg(this.src)" alt = "" />
+      <img src="images/food2.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food3.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food4.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food5.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food6.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food7.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food8.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food9.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food10.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/food11.JPG" onclick="openFullImg(this.src)" alt = ""/>
+    </div>
+
+    <div class="title">
+      <h1>Religion<span>Gallery</span></h1>
+    </div>
+    <div class="full-img" id="fullImgBox2">
+      <img src="images/1.JPG" id="fullImg2" alt = ""/>
+      <span onclick="closeFullImg()">X </span>
+    </div>
+    <div class="img-gallery">
+      <img src="images/church1.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church2.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church3.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church4.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church5.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church6.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church7.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church8.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church9.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church10.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church11.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church12.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church13.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church14.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church15.jpg" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/church16.jpg" onclick="openFullImg(this.src)" alt = ""/>
+    </div>
+
+    <div class="title">
+      <h1>People<span>Gallery</span></h1>
+    </div>
+    <div class="full-img" id="fullImgBox3">
+      <img src="images/1.JPG" id="fullImg3" alt = "" />
+      <span onclick="closeFullImg()">X </span>
+    </div>
+    <div class="img-gallery">
+      <img src="images/people1.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people2.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people3.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people4.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people5.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people6.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people7.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people8.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people9.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people10.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people11.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people12.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people13.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people14.JPG" onclick="openFullImg(this.src)" alt = ""/>
+      <img src="images/people15.JPG" onclick="openFullImg(this.src)" alt = ""/>
+    </div>
+
+    <!-- Javascript starts here -->
+    <script>
+      let fullImgBox = document.getElementById("fullImgBox");
+      let fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

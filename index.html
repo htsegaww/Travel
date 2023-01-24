@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethiopia Travel</title>
+
+    <!-- !custom css  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- !font awesome css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header starts here -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa-sharp fa-solid fa-plane-departure"></i>Ethiopia Tourism</a
+      >
+
+      <div class="menu-btn">
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="destination.html">Destination</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends here -->
+
+    <!-- background video including video slides -->
+    <section class="home">
+      <video
+        class="video-slide active"
+        src="images/2.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video class="video-slide" src="images/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="images/3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="images/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="images/5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Ethiopia<br /><span>Tourism</span></h1>
+        <p>
+          Ethiopia is a deeply religious land, home to age-old sites of worship
+          that continue to inspire and amaze. Sitting on the Horn of Africa,
+          this spectacular country is home to diverse landscapes, mouthwatering
+          cuisine and incredible wildlife.
+        </p>
+
+        <p>
+          Ethiopia has so many places to visit, check out the Gallery to see
+          images from different catagories:
+        </p>
+        <ol>
+          <ul>
+            <a style="color: crimson" href="gallery.html">Gallery</a>
+          </ul>
+        </ol>
+      </div>
+
+      <div class="media-icons"><a href="#"></a></div>
+
+      <div class="content">
+        <h1>Wonderful.<br /><span>Landscapes</span></h1>
+        <p>
+          You get to see the best landscapes that you do not see in other
+          countries
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Catching up<br /><span>Sunset</span></h1>
+        <p>The sunset is one of the most beautiful thing to see in ethiopia.</p>
+      </div>
+
+      <div class="content">
+        <h1>Road<br /><span>Trip</span></h1>
+        <p>
+          road trip is a must be done when we travel. Ethiopia has one of the
+          most beautiful places visit.
+        </p>
+
+        <h4>
+          Ethiopia has several places do a road trip. Here are some places...
+        </h4>
+        <ol>
+          <li>Gondar</li>
+          <li>Bahirdar</li>
+          <li>Axum</li>
+          <li>Hawassa</li>
+        </ol>
+      </div>
+
+      <div class="content">
+        <h1>Beautiful.<br /><span>Landscapes</span></h1>
+        <p>Ethiopia is known for landscapes.</p>
+      </div>
+
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+      <footer>
+        <div class="media-icons">
+          <a href="http://twitter.com" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+
+          <a href="http://facebook.com" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+
+          <a href="http://youtube.com" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+
+          <a href="http://instagram.com" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </footer>
+    </section>
+
+    <!-- javascript for media query-->
+    <script>
+      let menuBtn = document.querySelector(".menu-btn");
+      let navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+
+      <!-- !Javascript for video slider navigation -->
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+
+      var sliderNav = function (manual) {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      };
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+    </script>
+
+    <!-- link for social media icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
